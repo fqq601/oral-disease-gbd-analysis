@@ -20,13 +20,14 @@ This repository contains reproducible code for all analyses in the manuscript, i
 ```
 oral-disease-gbd-analysis/
 ├── scripts/                  # Core analysis code
-│   ├── 01_gbd_data_cleaning.R  # Extract GBD 2021 data (70+ population) & clean; add SDI grouping
-│   ├── 02_age_standardization.R # Calculate ASIR/ASPR/ASDR (2021 global population weights)
-│   ├── 03_descriptive_analysis.R # Compute burden metrics & generate basic visualizations
-│   ├── 04_joinpoint_regression.R # Trend analysis (APC/AAPC calculation)
-│   ├── 05_decomposition_analysis.R # Decompose burden changes (risk/population/age structure)
-│   ├── 06_sdi_inequality_analysis.R # SDI grouping + Spearman correlation + Cross-country inequality (SII/Concentration Index)
-│   └── 07_bapc_forecasting.R     # BAPC model (2022–2040 projections)
+│   ├── Table.R+TableS.R  # Extract GBD 2021 data (70+ population) & clean
+│   ├── Calculate ASR.R # Calculate ASIR/ASPR/ASDR (2021 global population weights)
+│   ├── Fig1.R+Fig S2-4.R+Fig S1-age-sex.R+Fig S1-age-year.R # Compute burden metrics & generate basic visualizations
+│   ├── Joinpoint.R # Trend analysis (APC/AAPC calculation)
+│   ├── Fig2.R # Decompose burden changes (risk/population/age structure)
+│   ├── Fig S7.R+Fig S8.R+Fig3-code_inequality_ci.R+Fig3-code_inequality_sii.R # SDI grouping + Spearman correlation + Cross-country inequality (SII/Concentration Index)
+│   └── Fig4-ASDR-both-bapc.R+Fig4-ASDR-female-bapc.R+Fig4-ASDR-male-bapc.R+Fig4-ASIR-both-bapc.R+Fig4-ASIR-female-bapc.R+Fig4-ASIR-male-bapc.R+
+│       Fig4-ASPR-both-bapc.R+Fig4-ASPR-both-bapc.R+Fig4-ASPR-male-bapc.R     # BAPC model (2022–2040 projections)
 └── README.md                 # Repository documentation
 ```
 
